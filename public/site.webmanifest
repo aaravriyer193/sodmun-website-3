@@ -1,0 +1,21 @@
+{
+  "name": "SODMUN · Summit of Diplomacy Model United Nations",
+  "short_name": "SODMUN",
+  "description": "The largest teen-owned Model United Nations conference in the world, run by students in Dubai, United Arab Emirates.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#050605",
+  "theme_color": "#050605",
+  "icons": [
+    {
+      "src": "assets/brand/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    },
+    {
+      "src": "assets/brand/apple-touch-icon.png",
+      "sizes": "180x180",
+      "type": "image/png"
+    }
+  ]
+}

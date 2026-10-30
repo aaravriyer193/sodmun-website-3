@@ -1,0 +1,50 @@
+{
+  "buildCommand": "npm run build",
+  "outputDirectory": "dist",
+  "framework": "vite",
+  "cleanUrls": true,
+  "trailingSlash": false,
+  "headers": [
+    {
+      "source": "/assets/(.*)",
+      "headers": [
+        {
+          "key": "Cache-Control",
+          "value": "public, max-age=604800"
+        }
+      ]
+    }
+  ],
+  "redirects": [
+    {
+      "source": "/register",
+      "destination": "/applications",
+      "permanent": true
+    },
+    {
+      "source": "/schedule",
+      "destination": "/",
+      "permanent": false
+    },
+    {
+      "source": "/committee/:id",
+      "destination": "/committees",
+      "permanent": false
+    },
+    {
+      "source": "/platform",
+      "destination": "/#platform",
+      "permanent": true
+    },
+    {
+      "source": "/about-us",
+      "destination": "/about",
+      "permanent": true
+    },
+    {
+      "source": "/contact-us",
+      "destination": "/contact",
+      "permanent": true
+    }
+  ]
+}
