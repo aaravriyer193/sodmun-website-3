@@ -282,6 +282,7 @@ export const SECRETARIAT = [
     group: 'Technology',
     people: [
       { id: 'aarav-iyer', name: 'Aarav Iyer', role: 'Head of Technology' },
+      { id: 'preksh-gala', name: 'Preksh Gala', role: 'Deputy Head of Technology' },
       { id: 'nirbav-sankar', name: 'Nirbav Sankar', role: 'Tech Member' },
     ],
   },
