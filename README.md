@@ -3,7 +3,7 @@
 The website for Summit of Diplomacy Model United Nations: a Vite site with
 plain multi-page HTML, three.js scenes and a few React Bits components.
 
-- Live: https://sodmun.vercel.app
+- Live: https://sodmun.com
 - Content (committees, secretariat, partners, countdown date, application links): `src/data/data.js`
 - Pages: the `.html` files in the root, one script each in `src/pages/`
 - Styles: `src/styles/`
