@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://sodmun.com/sitemap.xml
+Sitemap: https://www.sodmun.com/sitemap.xml

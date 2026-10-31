@@ -25,7 +25,7 @@ import {
   STATS, TESTIMONIALS, APPLICATIONS,
 } from '../src/data/data.js';
 
-const SITE_URL = 'https://sodmun.com'; // ← final domain goes here
+const SITE_URL = 'https://www.sodmun.com'; // ← final domain goes here
 const ROOT = join(dirname(fileURLToPath(import.meta.url)), '..');
 const read = (f) => readFileSync(join(ROOT, f), 'utf8');
 const write = (f, s) => writeFileSync(join(ROOT, f), s);
