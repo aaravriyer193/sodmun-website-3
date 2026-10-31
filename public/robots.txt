@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://sodmun.vercel.app/sitemap.xml
+Sitemap: https://sodmun.com/sitemap.xml
