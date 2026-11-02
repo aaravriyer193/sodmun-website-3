@@ -46,7 +46,7 @@ const PAGES = [
   {
     file: 'about.html', path: '/about', page: 'about', og: 'about', crumb: 'About',
     title: 'About SODMUN | Teen-Owned Model UN Conference in Dubai',
-    desc: 'The story of Summit of Diplomacy MUN: five editions, 1,500+ delegates across SODMUN I–III, and 50,000 USD raised for solar power in rural Indian schools.',
+    desc: 'The story of Summit of Diplomacy MUN: five editions, 1,500+ delegates across SODMUN I–III, and 70,000+ USD raised for solar panels in rural India.',
     keywords: 'about SODMUN, teen-owned MUN, Model United Nations Dubai, student-run MUN conference, MENA MUN',
   },
   {

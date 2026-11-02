@@ -24,7 +24,7 @@
 .impact { position: relative; min-height: 90vh; display: grid; align-items: center; overflow: hidden; border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); }
 .impact__gl { position: absolute; inset: 0; width: 100%; height: 100%; }
 .impact__in { position: relative; z-index: 2; display: grid; gap: 24px; }
-.impact__num { font-family: var(--display); font-size: clamp(80px, 17vw, 300px); line-height: .85; letter-spacing: -0.02em; display: flex; align-items: flex-start; gap: 16px; }
+.impact__num { font-family: var(--display); font-size: clamp(64px, 17vw, 300px); line-height: .85; letter-spacing: -0.02em; display: flex; align-items: flex-start; gap: 16px; }
 .impact__num small { font-family: var(--sans); font-size: 14px; letter-spacing: .1em; color: #8fd6ae; margin-top: 1.2em; }
 .impact .lede { max-width: 44ch; }
 

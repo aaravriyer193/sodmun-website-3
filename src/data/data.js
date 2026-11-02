@@ -38,7 +38,7 @@ export const STATS = [
   { value: 1500, suffix: '+', label: 'Delegates across SODMUN I, II and III' },
   { value: 700, suffix: '+', label: 'Delegates expected at SODMUN IV' },
   { value: 25, suffix: '', label: 'Committees, from the Security Council to Formula 1' },
-  { value: 50000, suffix: ' USD', label: 'Raised for solar power in rural Indian schools' },
+  { value: 70000, suffix: '+ USD', label: 'Raised for solar panels in rural India' },
 ];
 
 /* ---------------- Committees ----------------
