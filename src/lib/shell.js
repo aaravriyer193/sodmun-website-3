@@ -9,6 +9,10 @@ import { sound } from './sound.js';
 import { createElement } from 'react';
 import { createRoot } from 'react-dom/client';
 import CardNav from '../components/reactbits/CardNav.jsx';
+import { inject } from '@vercel/analytics';
+
+// Vercel Web Analytics. Every page loads this shell, so one call covers the site.
+inject();
 
 gsap.registerPlugin(ScrollTrigger);
 export { gsap, ScrollTrigger };
