@@ -37,7 +37,7 @@ export const NAV = [
 export const STATS = [
   { value: 1500, suffix: '+', label: 'Delegates across SODMUN I, II and III' },
   { value: 700, suffix: '+', label: 'Delegates expected at SODMUN IV' },
-  { value: 25, suffix: '', label: 'Committees, from the Security Council to Formula 1' },
+  { value: 20, suffix: '', label: 'Committees, from the Security Council to Formula 1' },
   { value: 70000, suffix: '+ USD', label: 'Raised for solar panels in rural India' },
 ];
 
@@ -54,184 +54,128 @@ export const COMMITTEES = [
   {
     id: 'ga1', abbr: 'GA1', name: 'The First General Assembly', alt: 'Disarmament & International Security',
     type: 'traditional',
-    agendas: [
-      'Establishing international frameworks for the regulation of Lethal Autonomous Weapons Systems',
-      'Developing international norms for cyber warfare and protecting state sovereignty in cyberspace',
-    ],
+    agendas: [], // SODMUN V agendas: coming soon
     about: 'The First Committee deals with disarmament, global challenges and threats to peace that affect the international community, and seeks out solutions to the challenges in the international security regime. It considers all disarmament and international security matters within the scope of the Charter, the general principles of cooperation in the maintenance of international peace and security, and the principles governing disarmament and the regulation of armaments.',
-  },
-  {
-    id: 'unsc', abbr: 'UNSC', name: 'United Nations Security Council', alt: 'Peace & Security',
-    type: 'traditional',
-    agendas: [
-      'Neutralizing transnational criminal coalitions and mandatory enforcement of anti-trafficking protocols',
-      'Re-evaluation of the veto power structure in the UNSC',
-    ],
-    about: 'The United Nations Security Council is a principal organ of the UN charged with maintaining international peace and security. Composed of 15 member states, including five permanent members with veto power, the council manages crises, deploys peacekeeping operations, and enforces decisions through economic sanctions, arms embargoes and authorised military action.',
   },
   {
     id: 'ga2', abbr: 'GA2', name: 'The Second General Assembly', alt: 'Economic & Financial',
     type: 'traditional',
-    agendas: [
-      'Deliberating the mobilisation of climate finance for loss and damage in vulnerable developing countries',
-      'Combating the macroeconomic consequences of protectionist trade measures caused by increasing global economic imbalance',
-    ],
+    agendas: [], // SODMUN V agendas: coming soon
     about: 'The General Assembly Second Committee, also known as the Economic and Financial Committee, is one of the six main committees of the UN General Assembly, comprising all 193 Member States. It is primarily responsible for global economic growth, sustainable development, poverty eradication, macroeconomic policy and international trade.',
   },
   {
-    id: 'ga4', abbr: 'GA4', name: 'The Fourth General Assembly', alt: 'Special Political & Decolonization',
-    type: 'traditional',
-    agendas: [
-      'Discussing the post-colonial complexities caused by colonial powers in Asia',
-      'Implementing solutions to mitigate authoritarian regimes globally',
-    ],
-    about: 'The General Assembly Fourth Committee, often called SPECPOL, is tasked with resolving complex, geopolitically sensitive issues. Its mandate spans decolonization, peacekeeping, outer space cooperation, human rights, and humanitarian aid for Palestinian refugees, approached through a political and strategic lens rather than a socio-economic one.',
+    id: 'ga3', abbr: 'GA3', name: 'The Third General Assembly', alt: 'Social, Humanitarian & Cultural',
+    type: 'traditional', emblem: 'assets/brand/logo.png',
+    agendas: [], // SODMUN V agendas: coming soon
+    about: 'The General Assembly Third Committee, known as SOCHUM, addresses social, humanitarian and cultural issues that affect people around the world. Its work spans human rights, the advancement of women, the protection of children, the treatment of refugees and the elimination of racism and discrimination.',
   },
   {
-    id: 'uncsw', abbr: 'UNCSW', name: 'Commission on the Status of Women', alt: 'Gender Equality',
+    id: 'unsc', abbr: 'UNSC', name: 'United Nations Security Council', alt: 'Peace & Security',
     type: 'traditional',
-    agendas: [
-      'Addressing the economic inequality in non-traditional reproductive technologies through comprehensive regulation',
-      'Enhancing women’s economic empowerment through financial inclusion and entrepreneurship',
-    ],
-    about: 'The United Nations Commission on the Status of Women is the principal global intergovernmental body exclusively dedicated to the promotion of gender equality and the empowerment of women. Established in 1946 as a functional commission of ECOSOC, it shapes global standards, documents women’s realities, and monitors the implementation of the Beijing Declaration and Platform for Action.',
+    agendas: [], // SODMUN V agendas: coming soon
+    about: 'The United Nations Security Council is a principal organ of the UN charged with maintaining international peace and security. Composed of 15 member states, including five permanent members with veto power, the council manages crises, deploys peacekeeping operations, and enforces decisions through economic sanctions, arms embargoes and authorised military action.',
   },
   {
     id: 'unhrc', abbr: 'UNHRC', name: 'United Nations Human Rights Council', alt: 'Human Rights',
     type: 'traditional',
-    agendas: [
-      'Holding member states responsible for the denial of human rights, such as food, water and housing, during conflict',
-      'Combating state-sponsored media manipulation and the expansion of political prison camps',
-    ],
+    agendas: [], // SODMUN V agendas: coming soon
     about: 'The United Nations Human Rights Council is an intergovernmental body responsible for promoting and protecting human rights globally. Composed of 47 Member States, the Geneva-based council addresses urgent human rights violations, investigates crises through fact-finding missions, and issues recommendations to ensure adherence to fundamental freedoms.',
   },
   {
-    id: 'who', abbr: 'WHO', name: 'World Health Organization', alt: 'Global Health',
+    id: 'uncsw', abbr: 'UNCSW', name: 'United Nations Commission on the Status of Women', alt: 'Gender Equality',
     type: 'traditional',
-    agendas: [
-      'Ensuring emergency medical infrastructure for civilian populations in active conflict zones (short-term)',
-      'Rebuilding sustainable health systems in post-conflict humanitarian settings (long-term)',
-    ],
-    about: 'A WHO Expert Committee is a designated group of technical specialists convened by the Director-General to evaluate complex global health issues. Its primary function is to review emerging scientific data and provide independent, evidence-based guidance, strategic recommendations and policy advice on global health challenges.',
+    agendas: [], // SODMUN V agendas: coming soon
+    about: 'The United Nations Commission on the Status of Women is the principal global intergovernmental body exclusively dedicated to the promotion of gender equality and the empowerment of women. Established in 1946 as a functional commission of ECOSOC, it shapes global standards, documents women’s realities, and monitors the implementation of the Beijing Declaration and Platform for Action.',
   },
   {
-    id: 'unicef', abbr: 'UNICEF', name: 'United Nations International Children’s Emergency Fund', alt: 'Children’s Rights',
-    type: 'traditional',
-    agendas: [
-      'Mitigating the effects of media consumption and “brain rot” on the attention span of adolescents',
-      'Addressing and ensuring the safeguarding of children residing in conflict-ridden zones',
-    ],
-    about: 'UNICEF is dedicated to defending, promoting and protecting the fundamental rights of children worldwide. Delegates collaborate to address critical issues such as child healthcare, nutrition, access to quality education, clean water, and emergency relief in crisis-affected areas.',
-  },
-  {
-    id: 'unep', abbr: 'UNEP', name: 'United Nations Environment Programme', alt: 'Environment',
-    type: 'traditional',
-    agendas: [
-      'Addressing and countering methane emissions from agricultural activities and waste management systems',
-      'Promoting sustainable energy use and efficiency in developing countries',
-    ],
-    about: 'The United Nations Environment Programme is the leading global environmental authority. It sets the global environmental agenda, promotes the coherent implementation of the environmental dimension of sustainable development within the UN system, and serves as an authoritative advocate for the global environment.',
-  },
-  {
-    id: 'unodc', abbr: 'UNODC', name: 'United Nations Office on Drugs and Crime', alt: 'Drugs & Crime',
-    type: 'traditional',
-    agendas: [
-      'Safeguarding endangered species and strengthening international conservation laws',
-      'Addressing the socio-economic impacts of narcotic networks and enhancing governance strategies for global security',
-    ],
-    about: 'The United Nations Office on Drugs and Crime works to make the world safer from transnational organised crime, drug trafficking, corruption and terrorism. It assists Member States in drafting legislation, strengthening criminal justice systems, and promoting the rule of law to build resilient societies.',
+    id: 'iaea', abbr: 'IAEA', name: 'International Atomic Energy Agency', alt: 'Nuclear Energy & Safeguards',
+    type: 'traditional', emblem: 'assets/brand/logo.png',
+    agendas: [], // SODMUN V agendas: coming soon
+    about: 'The International Atomic Energy Agency is the world’s centre for cooperation in the nuclear field. It works with its Member States to promote the safe, secure and peaceful use of nuclear technology, and uses its safeguards system to verify that nuclear material is not diverted towards weapons.',
   },
   {
     id: 'ccpcj', abbr: 'CCPCJ', name: 'Commission on Crime Prevention and Criminal Justice', alt: 'Criminal Justice',
     type: 'traditional',
-    agendas: [
-      'Addressing criminal networks involved in illegal waste trafficking, hazardous dumping and exploitative recycling economies',
-      'Addressing predatory lending and illegal microfinance schemes perpetuating cycles of poverty in vulnerable communities',
-    ],
+    agendas: [], // SODMUN V agendas: coming soon
     about: 'The Commission on Crime Prevention and Criminal Justice is a functional commission of ECOSOC and the principal policymaking body of the United Nations on crime prevention and criminal justice. Established in 1992, it works to improve international action against national and transnational crime while enhancing the fairness and efficiency of criminal justice systems.',
-  },
-
-  {
-    id: 'csc', abbr: 'CSC', name: 'Crisis Space Council', alt: 'Space Governance',
-    type: 'crisis', agendas: ['Crisis', 'Crisis'],
-    about: 'CSC is a crisis committee focused on space governance and international cooperation beyond Earth. Delegates navigate space security, technological competition, and the future of space exploration in a rapidly evolving environment. The committee rewards adaptability, strategic thinking and decisive action under pressure.',
-  },
-  {
-    id: 'fcc', abbr: 'FCC', name: 'Futuristic Crisis Committee', alt: 'Future Governance',
-    type: 'crisis', agendas: ['Crisis', 'Crisis'],
-    about: 'FCC is a fast-paced crisis committee set in a rapidly evolving future. Delegates respond to governance breakdowns, technological disruptions and international crises while adapting to constant developments. It emphasises creativity, adaptability and strategic problem-solving under pressure.',
-  },
-  {
-    id: 'f1', abbr: 'F1', name: 'Formula 1', alt: 'Motorsport Governance',
-    type: 'crisis', agendas: ['Crisis', 'Crisis'],
-    about: 'The Formula 1 committee focuses on the governance, politics and commercial side of motorsport. Delegates deal with technical regulations, team rivalries, championship management and crises within the sport, combining strategic negotiation with fast-paced updates.',
-  },
-  {
-    id: 'oma', abbr: 'OMA', name: 'Organisation of Musical Arts', alt: 'The Music Industry',
-    type: 'crisis', agendas: ['Crisis', 'Crisis'],
-    about: 'The Organisation of Musical Arts brings crisis simulation to the world of music. Delegates navigate the rivalries, deals and controversies that shape the global music industry, responding to developments as they unfold.',
-  },
-  {
-    id: 'interpol', abbr: 'INTERPOL', name: 'International Criminal Police Organization', alt: 'Global Policing',
-    type: 'crisis', agendas: ['Crisis', 'Crisis'],
-    about: 'INTERPOL connects police forces across its member countries so they can work together to make the world safer. In committee, delegates coordinate cross-border investigations and respond to unfolding criminal threats in real time.',
-  },
-  {
-    id: 'fifa', abbr: 'FIFA', name: 'Fédération Internationale de Football Association', alt: 'Football Governance',
-    type: 'crisis', agendas: ['Crisis', 'Crisis'],
-    about: 'The FIFA committee simulates the global governance of football and the challenges the sport faces internationally. Delegates discuss tournament organisation, financial regulation, ethical controversies and the development of football worldwide, combining sports administration with crisis-oriented debate.',
-  },
-  {
-    id: 'tbc', abbr: 'TBC', name: 'The Black Chamber', alt: 'Covert Operations',
-    type: 'crisis', agendas: ['Crisis', 'Crisis'],
-    about: 'The Black Chamber is a specialised committee focused on covert operations, influence and global power structures. Delegates navigate secrecy, political manipulation and strategic decision-making while shaping international events from behind the scenes. Built for delegates who enjoy unconventional formats and strategic gameplay.',
-  },
-  {
-    id: 'twh', abbr: 'TWH', name: 'The White House', alt: 'Executive Cabinet',
-    type: 'crisis', agendas: ['Crisis', 'Crisis'],
-    about: 'The White House places delegates inside the executive branch of the United States. As senior officials, they advise, manoeuvre and act as domestic and international crises land on the President’s desk.',
-  },
-
-  {
-    id: 'ukfc', abbr: 'UKFC', name: 'United Kingdom Foreign Court', alt: 'Legal Advocacy',
-    type: 'special',
-    agendas: ['Discussion on the appeal of Indra Sawhney and Ors. v. Union of India'],
-    about: 'UKFC is a specialised legal committee built around courtroom-style competition and legal reasoning. Delegates participate in teams and argue across criminal, family, tort and corporate law. The focus is analytical thinking, structured argumentation and legal interpretation rather than traditional diplomatic debate, making it ideal for delegates interested in law and advocacy.',
-  },
-  {
-    id: 'icao', abbr: 'ICAO', name: 'International Civil Aviation Organization', alt: 'Aviation',
-    type: 'special',
-    agendas: [
-      'Ensuring labour rights and ethical working conditions within the global airline industry',
-      'Deliberating upon the regulation of carbon emissions and the transition towards net-zero aviation',
-    ],
-    about: 'ICAO committees support the agency’s goal of safe, secure and sustainable international civil aviation. From the legal committee to technical environmental panels, they draft policies, conduct studies and shape the regulations that govern global air transport.',
-  },
-  {
-    id: 'icj', abbr: 'ICJ', name: 'International Court of Justice', alt: 'International Law',
-    type: 'special',
-    agendas: ['Armenia v. Azerbaijan', 'China v. India'],
-    about: 'The International Court of Justice is the principal judicial organ of the United Nations, settling legal disputes between states and giving advisory opinions on international law. At SODMUN it runs as a mock courtroom, with participants acting as advocates and judges rather than country delegates.',
-  },
-  {
-    id: 'marvel', abbr: 'MARVEL', name: 'Marvel', alt: 'Fictional Crisis',
-    type: 'special', agendas: ['Crisis', 'Crisis'],
-    about: 'The Marvel committee is a fictional crisis set within the Marvel universe. Delegates represent major characters and organisations while responding to large-scale crises, shifting alliances and unpredictable developments, combining creative problem-solving with fast-paced collaborative strategy.',
-  },
-  {
-    id: 'itpa', abbr: 'ITPA', name: 'International Tribunal on Policy Affairs', alt: 'Tribunal',
-    type: 'special', agendas: ['To be announced'],
-    about: 'The International Tribunal on Policy Affairs is a tribunal-style committee in which delegates examine contested policy decisions, build their case, and argue it before the bench.',
   },
   {
     id: 'ipc', abbr: 'IPC', name: 'International Press Corps', alt: 'Journalism',
-    type: 'special',
-    agendas: ['Ethics of publishing war photography and graphic reporting'],
+    type: 'traditional',
+    agendas: [], // SODMUN V agendas: coming soon
     about: 'The International Press Corps simulates the role of global media during the conference. Instead of representing a country, delegates act as journalists and outlets, covering other committees, reporting on breaking developments in real time, conducting interviews and publishing news coverage.',
+  },
+  {
+    id: 'unodc', abbr: 'UNODC Jr', name: 'United Nations Office on Drugs and Crime', alt: 'Drugs & Crime · Junior',
+    type: 'traditional',
+    agendas: [], // SODMUN V agendas: coming soon
+    about: 'The United Nations Office on Drugs and Crime works to make the world safer from transnational organised crime, drug trafficking, corruption and terrorism. It assists Member States in drafting legislation, strengthening criminal justice systems, and promoting the rule of law to build resilient societies.',
+  },
+  {
+    id: 'unscjr', abbr: 'UNSC Jr', name: 'Security Council Jr', alt: 'Peace & Security · Junior',
+    type: 'traditional', emblem: 'assets/committees/unsc.png',
+    agendas: [], // SODMUN V agendas: coming soon
+    about: 'A junior edition of the Security Council for younger and newer delegates. It follows the procedure of the UN Security Council, where 15 members, including five permanent members with veto power, debate threats to international peace and security.',
+  },
+  {
+    id: 'csc', abbr: 'CSC', name: 'Crisis Space Council', alt: 'Space Governance',
+    type: 'crisis',
+    agendas: [], // SODMUN V agendas: coming soon
+    about: 'CSC is a crisis committee focused on space governance and international cooperation beyond Earth. Delegates navigate space security, technological competition, and the future of space exploration in a rapidly evolving environment. The committee rewards adaptability, strategic thinking and decisive action under pressure.',
+  },
+  {
+    id: 'twh', abbr: 'TWH', name: 'The White House', alt: 'Executive Cabinet',
+    type: 'crisis',
+    agendas: [], // SODMUN V agendas: coming soon
+    about: 'The White House places delegates inside the executive branch of the United States. As senior officials, they advise, manoeuvre and act as domestic and international crises land on the President’s desk.',
+  },
+  {
+    id: 'doomsday', abbr: 'Doomsday', name: 'Doomsday', alt: 'Catastrophe Crisis',
+    type: 'crisis', emblem: 'assets/brand/logo.png',
+    agendas: [], // SODMUN V agendas: coming soon
+    about: 'A crisis committee built around a catastrophe in motion. Delegates respond to developments as the scenario unfolds, and the full brief is released with the background guides.',
+  },
+  {
+    id: 'fcc', abbr: 'FCC', name: 'Futuristic Crisis Committee', alt: 'Future Governance',
+    type: 'crisis',
+    agendas: [], // SODMUN V agendas: coming soon
+    about: 'FCC is a fast-paced crisis committee set in a rapidly evolving future. Delegates respond to governance breakdowns, technological disruptions and international crises while adapting to constant developments. It emphasises creativity, adaptability and strategic problem-solving under pressure.',
+  },
+  {
+    id: 'fifa', abbr: 'FIFA', name: 'Fédération Internationale de Football Association', alt: 'Football Governance',
+    type: 'crisis',
+    agendas: [], // SODMUN V agendas: coming soon
+    about: 'The FIFA committee simulates the global governance of football and the challenges the sport faces internationally. Delegates discuss tournament organisation, financial regulation, ethical controversies and the development of football worldwide, combining sports administration with crisis-oriented debate.',
+  },
+  {
+    id: 'icc', abbr: 'ICC', name: 'International Cricket Council', alt: 'Cricket Governance',
+    type: 'special', emblem: 'assets/brand/logo.png',
+    agendas: [], // SODMUN V agendas: coming soon
+    about: 'The International Cricket Council is the global governing body of cricket. It oversees the rules and integrity of the sport, runs international tournaments such as the ICC Cricket World Cup, and works with its member boards to grow the game worldwide.',
+  },
+  {
+    id: 'es', abbr: 'ES', name: 'Entrepreneurship Summit', alt: 'Business Case Competition',
+    type: 'special', emblem: 'assets/brand/logo.png',
+    agendas: [], // SODMUN V agendas: coming soon
+    about: 'The Entrepreneurship Summit is a business case competition. Teams analyse a real-world business case, build a strategy and pitch their solution to a panel of judges.',
+  },
+  {
+    id: 'f1', abbr: 'F1', name: 'Formula 1', alt: 'Motorsport Governance',
+    type: 'special',
+    agendas: [], // SODMUN V agendas: coming soon
+    about: 'The Formula 1 committee focuses on the governance, politics and commercial side of motorsport. Delegates deal with technical regulations, team rivalries, championship management and crises within the sport, combining strategic negotiation with fast-paced updates.',
+  },
+  {
+    id: 'ukfc', abbr: 'UKFC', name: 'United Kingdom Foreign Court', alt: 'Legal Advocacy',
+    type: 'special',
+    agendas: [], // SODMUN V agendas: coming soon
+    about: 'UKFC is a specialised legal committee built around courtroom-style competition and legal reasoning. Delegates participate in teams and argue across criminal, family, tort and corporate law. The focus is analytical thinking, structured argumentation and legal interpretation rather than traditional diplomatic debate, making it ideal for delegates interested in law and advocacy.',
   },
 ];
 
-/* ---------------- Secretariat (SODMUN IV) ---------------- */
+/** Emblem image for a committee (new committees fall back to the SODMUN mark). */
+export const emblemOf = (c) => c.emblem || `assets/committees/${c.id}.png`;
+
 export const SECRETARIAT = [
   {
     group: 'Founders',
@@ -443,8 +387,8 @@ export const SCHEDULE = [
 /* ---------------- Applications ----------------
    Paste a form link into `url` to open a role; leave null to show “Opening soon”. */
 export const APPLICATIONS = [
-  { id: 'delegate', title: 'Delegate', kicker: 'Individuals', url: null,
-    text: 'Represent a nation, a character or a newsroom in one of 25 committees. Open to students of every experience level, from first-timers to seasoned Best Delegates.' },
+  { id: 'delegate', title: 'Delegate', kicker: 'Individuals', url: 'https://docs.google.com/forms/d/e/1FAIpQLScFsmD8l_F87Whkzq2DhXQZPK1uw1q8DiDt05NXvRKN22TKlg/viewform',
+    text: 'Represent a nation, a character or a newsroom in one of 20 committees. Open to students of every experience level, from first-timers to seasoned Best Delegates.' },
   { id: 'delegation', title: 'School Delegation', kicker: 'Schools & clubs', url: null,
     text: 'Bring your school’s MUN club as a delegation. Faculty advisors get a single point of contact and coordinated committee allocations.' },
   { id: 'admin', title: 'Admin', kicker: 'On the ground', url: null,

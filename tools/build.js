@@ -21,7 +21,7 @@ import { readFileSync, writeFileSync } from 'node:fs';
 import { fileURLToPath } from 'node:url';
 import { dirname, join } from 'node:path';
 import {
-  SITE, COMMITTEES, COMMITTEE_TYPES, SECRETARIAT, PARTNERS,
+  SITE, COMMITTEES, COMMITTEE_TYPES, emblemOf, SECRETARIAT, PARTNERS,
   STATS, TESTIMONIALS, APPLICATIONS,
 } from '../src/data/data.js';
 
@@ -39,7 +39,7 @@ const PAGES = [
   {
     file: 'index.html', path: '/', page: 'home', og: 'home',
     title: 'SODMUN | Summit of Diplomacy Model United Nations, Dubai',
-    desc: 'SODMUN is the largest teen-owned Model United Nations conference in the world: 25 committees and 700+ delegates in Dubai, UAE. Made by MUNers, for MUNers.',
+    desc: 'SODMUN is the largest teen-owned Model United Nations conference in the world: 20 committees and 700+ delegates in Dubai, UAE. Made by MUNers, for MUNers.',
     keywords: 'SODMUN, Model United Nations Dubai, MUN conference UAE, teen-owned MUN, Summit of Diplomacy, MUN Dubai, Model UN conference Middle East',
     dark: true,
   },
@@ -57,9 +57,9 @@ const PAGES = [
   },
   {
     file: 'committees.html', path: '/committees', page: 'committees', og: 'committees', crumb: 'Committees',
-    title: '25 MUN Committees | SODMUN Dubai Model United Nations',
-    desc: 'All 25 SODMUN committees: UNSC, GA1, GA2, GA4, UNHRC, WHO, UNICEF, UNEP and more, plus crisis committees like Formula 1, FIFA, INTERPOL and The Black Chamber.',
-    keywords: 'MUN committees, UNSC MUN, crisis committee MUN, Model UN committees Dubai, GA1 DISEC, UNHRC, ICJ MUN',
+    title: '20 MUN Committees | SODMUN Dubai Model United Nations',
+    desc: 'All 20 SODMUN V committees: UNSC, GA1, GA2, GA3, UNHRC, IAEA and more, crisis committees like The White House, FIFA and Doomsday, plus Formula 1 and the ICC.',
+    keywords: 'MUN committees, UNSC MUN, crisis committee MUN, Model UN committees Dubai, GA1 DISEC, UNHRC, IAEA MUN',
   },
   {
     file: 'partners.html', path: '/partners', page: 'partners', og: 'partners', crumb: 'Partners',
@@ -75,8 +75,8 @@ const PAGES = [
   },
   {
     file: 'applications.html', path: '/applications', page: 'applications', og: 'applications', crumb: 'Applications',
-    title: 'Register | SODMUN V Registration Coming Soon',
-    desc: 'Registration for SODMUN V is coming soon, for delegates, school delegations and admins.',
+    title: 'Register | SODMUN V Delegate Registration',
+    desc: 'Delegate registration for SODMUN V is open. School delegation and admin registration are coming soon.',
     keywords: 'MUN registration Dubai, become a MUN delegate, MUN school delegation, MUN admin',
   },
   {
@@ -85,7 +85,7 @@ const PAGES = [
     desc: 'That page is not on the agenda.',
   },
   {
-    // One template renders all 25 committees from ?c=, so it stays out of
+    // One template renders every committee from ?c=, so it stays out of
     // the index until the SODMUN V agendas are published and linked.
     file: 'committee.html', path: '/committee', page: 'committee', og: 'committees', noindex: true, crumb: 'Committee',
     title: 'Committee | SODMUN',
@@ -127,7 +127,7 @@ const FAQ = [
   ['What is SODMUN?', 'SODMUN stands for Summit of Diplomacy Model United Nations. It is a teen-owned Model UN conference in Dubai, United Arab Emirates, run entirely by students, with more than 1,500 delegates across its first three editions.'],
   ['Where and when does SODMUN take place?', 'SODMUN takes place in Dubai, UAE, over three days. SODMUN V begins on 11 December 2026; the venue will be announced on this site and on Instagram @sod.mun.'],
   ['Who can take part in SODMUN?', 'Any secondary school student can apply, whether it is your first conference or your fiftieth. Students can apply individually or as a school delegation, and experienced MUNers can apply to chair.'],
-  ['How many committees does SODMUN have?', 'SODMUN has 25 committees: traditional councils such as the Security Council, GA1, GA2, GA4, UNHRC, WHO, UNICEF and UNEP; crisis committees such as Formula 1, FIFA, INTERPOL and The Black Chamber; and specialised committees including the ICJ, ICAO and the International Press Corps.'],
+  ['How many committees does SODMUN have?', 'SODMUN V has 20 committees: traditional councils such as the Security Council, GA1, GA2, GA3, UNHRC, IAEA and the International Press Corps; crisis committees such as The White House, FIFA and Doomsday; and specialised committees including Formula 1, the International Cricket Council, the Entrepreneurship Summit and UKFC.'],
   ['Do I need experience to be a SODMUN delegate?', 'No. Committees are designed for a range of experience levels, and background guides and delegate resources are published before the conference to help first-time delegates prepare.'],
   ['Does SODMUN use a conference platform?', 'Yes. Since SODMUN IV, committees run on SODMUN’s own platform at app.sodmun.com, with delegate chat, bloc messaging for points of information, an AI assistant and a speaking-list timer, so committees run paperless.'],
 ];
@@ -282,7 +282,7 @@ const SECTIONS = {
   cgrid: () => COMMITTEES.map((c, i) => `
     <a class="ccard" href="committee.html?c=${c.id}" data-type="${c.type}" data-q="${esc((c.abbr + ' ' + c.name + ' ' + c.alt).toLowerCase())}" style="--i:${i}">
       <span class="ccard__top"><span>${String(i + 1).padStart(2, '0')}</span><span>${COMMITTEE_TYPES[c.type]}</span></span>
-      <i class="ccard__emblem" style="-webkit-mask-image:url('assets/committees/${c.id}.png');mask-image:url('assets/committees/${c.id}.png')" role="img" aria-label="${esc(c.name)} emblem"></i>
+      <i class="ccard__emblem" style="-webkit-mask-image:url('${emblemOf(c)}');mask-image:url('${emblemOf(c)}')" role="img" aria-label="${esc(c.name)} emblem"></i>
       <span class="ccard__abbr">${esc(c.abbr)}</span>
       <span class="ccard__name">${esc(c.name)}</span>
     </a>`).join(''),
