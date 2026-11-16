@@ -12,7 +12,7 @@ export const SITE = {
   dates: '11 December 2026',
   // Countdown target, Gulf Standard Time
   startsAt: '2026-12-11T00:00:00+04:00',
-  venue: 'Venue to be announced',
+  venue: 'Ambassador International Academy, Mankhool',
   email: 'sg.sodmun@gmail.com',
   phone: '+971 55 480 1227',
   phoneHref: 'tel:+971554801227',
@@ -341,7 +341,7 @@ export const EDITIONS = [
   { n: 'II', title: 'SODMUN II', text: 'Over 450 delegates across 12+ committees. The foundation of what is now the largest teen-owned MUN in the world.', img: 'assets/photos/legacy-2.jpg' },
   { n: 'III', title: 'SODMUN III', text: 'Over 600 delegates and 15+ committees. The most lively SODMUN yet, with its own Clash Royale clan and Minecraft server.', img: 'assets/photos/legacy-3.jpg' },
   { n: 'IV', title: 'SODMUN IV', text: '700+ delegates expected across 25 committees, and the first SODMUN with its own digital platform.', img: 'assets/photos/legacy-end.jpg' },
-  { n: 'V', title: 'SODMUN V', text: 'The next chapter, from 11 December 2026 in Dubai. Venue to be announced.', img: null },
+  { n: 'V', title: 'SODMUN V', text: 'The next chapter, 11 to 13 December 2026 at Ambassador International Academy, Mankhool, Dubai.', img: null },
 ];
 
 /* ---------------- Schedule (provisional, modelled on SODMUN IV) ---------------- */

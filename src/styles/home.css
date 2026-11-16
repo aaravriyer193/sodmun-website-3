@@ -59,6 +59,9 @@
 .countdown .split-flap-text__tile { box-shadow: 0 0 0 1px rgba(191, 232, 208, .12) inset, 0 20px 40px rgba(0, 0, 0, .6); }
 .horizon__date { display: flex; align-items: center; gap: 14px; font-family: var(--sans); font-size: 12px; letter-spacing: .08em; text-transform: uppercase; color: #bfe8d0; }
 .horizon__date i { width: 24px; height: 1px; background: currentColor; opacity: .5; }
+.horizon__date { flex-wrap: wrap; row-gap: 6px; }
+.horizon__date span:first-child { white-space: nowrap; }
+@media (max-width: 600px) { .horizon__date i { display: none; } .horizon__date span:last-child { flex-basis: 100%; } }
 .horizon__btns { justify-content: center; margin-top: 6px; }
 
 .horizon__prints { position: absolute; inset: 0; z-index: 2; pointer-events: none; }

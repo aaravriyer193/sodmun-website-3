@@ -125,7 +125,7 @@ const WEBSITE = {
 
 const FAQ = [
   ['What is SODMUN?', 'SODMUN stands for Summit of Diplomacy Model United Nations. It is a teen-owned Model UN conference in Dubai, United Arab Emirates, run entirely by students, with more than 1,500 delegates across its first three editions.'],
-  ['Where and when does SODMUN take place?', 'SODMUN takes place in Dubai, UAE, over three days. SODMUN V begins on 11 December 2026; the venue will be announced on this site and on Instagram @sod.mun.'],
+  ['Where and when does SODMUN take place?', 'SODMUN takes place in Dubai, UAE, over three days. SODMUN V runs from 11 to 13 December 2026 at Ambassador International Academy in Al Mankhool, Dubai.'],
   ['Who can take part in SODMUN?', 'Any secondary school student can apply, whether it is your first conference or your fiftieth. Students can apply individually or as a school delegation, and experienced MUNers can apply to chair.'],
   ['How many committees does SODMUN have?', 'SODMUN V has 20 committees: traditional councils such as the Security Council, GA1, GA2, GA3, UNHRC, IAEA and the International Press Corps; crisis committees such as The White House, FIFA and Doomsday; and specialised committees including Formula 1, the International Cricket Council, the Entrepreneurship Summit and UKFC.'],
   ['Do I need experience to be a SODMUN delegate?', 'No. Committees are designed for a range of experience levels, and background guides and delegate resources are published before the conference to help first-time delegates prepare.'],
